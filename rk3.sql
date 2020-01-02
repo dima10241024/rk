@@ -1,11 +1,11 @@
 #Цой Дмитрий Вариант 6
 #1
-mysql> CREATE TABLE user{
+mysql> CREATE TABLE user(
 country VARCHAR(30) NOT NULL,
 city VARCHAR(30) NOT NULL,
-population INT(1000000000),
-code INT(1000000000) };
-INSERT INTO user (country, city, population, code )
+population INT(10),
+code INT(10) );
+mysql> INSERT INTO user (country, city, population, code )
 VALUES ('Russia', 'Moscow', 120000000, 1),
 ('Germany', 'Berlin', 38000000, 2),
 ('England', 'London', 49000000, 3),
@@ -21,7 +21,7 @@ VALUES ('Russia', 'Moscow', 120000000, 1),
 
 #2
 mysql> UPDATE user SET population =150000000
-WHERE population=120000000 LIMIT1;
+WHERE country="Russia";
 
 
 
